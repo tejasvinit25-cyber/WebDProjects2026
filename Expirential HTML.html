@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petition Signing Website</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Save Our Local Park</h1>
+        <p>Support the cause to protect our community green space</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#petition">Sign Petition</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>
+                This website is created to raise awareness about saving our local park.
+                Your support can help stop unwanted construction and protect nature.
+            </p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About the Issue</h2>
+            <article>
+                <p>
+                    The local park is an important part of our community. It provides
+                    fresh air, space for children to play, and a place for relaxation.
+                    Due to new construction plans, this park is at risk.
+                </p>
+                <p>
+                    By signing this petition, you are supporting the protection of this
+                    valuable green space for future generations.
+                </p>
+            </article>
+        </section>
+
+        <!-- Petition Section -->
+        <section id="petition">
+            <h2>Sign the Petition</h2>
+
+            <!-- Signature Count -->
+            <p>
+                Current Signatures: <strong id="count">0</strong>
+            </p>
+
+            <!-- Form -->
+            <form onsubmit="increaseCount(event)">
+                
+                <fieldset>
+                    <legend>Enter Your Details</legend>
+
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="comment">Comment (Optional):</label><br>
+                    <textarea id="comment" name="comment"></textarea><br><br>
+
+                    <button type="submit">Sign Petition</button>
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Petition Website | Educational Project</p>
+    </footer>
+
+    <!-- Simple JavaScript for counter -->
+    <script>
+        let count = 0;
+
+        function increaseCount(event) {
+            event.preventDefault();
+            count++;
+            document.getElementById("count").innerText = count;
+            alert("Thank you for signing!");
+        }
+    </script>
+
+</body>
+</html>
