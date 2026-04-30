@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Save Our Park Petition</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #e8f5e9, #f1f8f6);
+}
+
+header {
+    background: linear-gradient(135deg, #2e7d32, #66bb6a);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 0 0 30px 30px;
+}
+
+nav {
+    text-align: center;
+    margin: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 20px;
+    background: white;
+    color: #2e7d32;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    background: white;
+    margin: 30px 0;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+section:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+h2 {
+    color: #2e7d32;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 15px;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+progress, meter {
+    width: 100%;
+    height: 20px;
+}
+
+button {
+    background: #2e7d32;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+aside {
+    background: #dcedc8;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+}
+
+footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌿 Save Our Local Park</h1>
+    <p><mark>Protect Nature | Support Community</mark></p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#petition">Petition</a>
+    <a href="#updates">Updates</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<!-- About -->
+<section id="about">
+    <h2>📖 About the Cause</h2>
+
+    <figure>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Park Image">
+        <figcaption>Our beautiful local park 🌳</figcaption>
+    </figure>
+
+    <p>
+        Our park is under threat. It provides <mark>fresh air</mark>, relaxation, and space for community activities.
+    </p>
+</section>
+
+<!-- Petition -->
+<section id="petition">
+    <h2>✍️ Sign the Petition</h2>
+
+    <p>Supporters: <strong>2547 / 5000</strong></p>
+
+    <!-- Progress bar -->
+    <progress value="2547" max="5000"></progress>
+
+    <p>Support Level:</p>
+    <!-- Meter -->
+    <meter value="0.5">50%</meter>
+
+    <form>
+        <label>Name</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Comment</label>
+        <textarea></textarea>
+
+        <br><br>
+        <button>Submit</button>
+    </form>
+</section>
+
+<!-- Updates -->
+<section id="updates">
+    <h2>📢 Updates</h2>
+
+    <ul>
+        <li>Meeting on <time datetime="2026-05-05">May 5</time></li>
+        <li>2500+ signatures collected</li>
+    </ul>
+
+    <!-- Audio -->
+    <h4>🎧 Listen to Awareness Message</h4>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3">
+    </audio>
+</section>
+
+<!-- Aside -->
+<aside>
+    <h3>🌍 Why This Matters</h3>
+    <p>Parks improve air quality and mental health.</p>
+</aside>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>📞 Contact</h2>
+
+    <details>
+        <summary>View Details</summary>
+        <p>📍 123 Green Street</p>
+        <p>📧 support@savepark.org</p>
+    </details>
+
+    <!-- Map -->
+    <h4>📍 Location Map</h4>
+    <iframe src="https://maps.google.com/maps?q=park&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Save Our Park Campaign</p>
+</footer>
+
+</body>
+</html>
